@@ -6,21 +6,30 @@ import java.util.Date;
 
 public class Brano
 {
-    public String getTitolo() {
-        return titolo;
-    }
-
-    public void setTitolo(String titolo) {
-        this.titolo = titolo;
-    }
-
     private String titolo;
-    private int durata;
     private String autore;
-    private Date datecreazione;
+    private int durata;
+    private String data;
+    private String genere;
 
-    public Brano(String titolo)
+    public Brano(String titolo, String autore, int durata, String data, String genere)
     {
-        this.titolo=titolo;
+        this.titolo = titolo;
+        this.autore = autore;
+        this.durata = durata;
+        this.data = data;
+        this.genere = genere;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Brano{" +
+                "titolo='" + titolo + '\'' +
+                ", autore='" + autore + '\'' +
+                ", durata=" + durata +
+                ", data='" + data + '\'' +
+                ", genere='" + genere + '\'' +
+                '}';
     }
 }
