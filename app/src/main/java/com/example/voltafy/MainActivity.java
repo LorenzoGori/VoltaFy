@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     EditText editTitolo;
     GestoreBrano gb;
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
